@@ -24,6 +24,6 @@ public class SimpleFuncInterfaceTest {
     @Test
     public void lambdaTest() {
         DoWorkCaller caller = new DoWorkCaller("lambda work");
-        caller.callDoWork(System.out::println);
+        caller.callOtherWork(work -> System.out.println("Doing usual work: " + work));
     }
 }

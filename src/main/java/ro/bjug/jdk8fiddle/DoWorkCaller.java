@@ -14,4 +14,8 @@ public class DoWorkCaller {
     public void callDoWork(SimpleFuncInterface sfi) {
         sfi.doWork(work);
     }
+
+    public void callOtherWork(SimpleFuncInterface sfi) {
+        sfi.doOther(work);
+    }
 }

@@ -5,5 +5,5 @@ package ro.bjug.jdk8fiddle;
  */
 @FunctionalInterface
 public interface SimpleFuncInterface {
-    public void doWork();
+    public void doWork(String work);
 }

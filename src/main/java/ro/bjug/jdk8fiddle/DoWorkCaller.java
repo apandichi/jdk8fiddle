@@ -5,7 +5,7 @@ package ro.bjug.jdk8fiddle;
  */
 public class DoWorkCaller {
 
-    public void callDoWork(SimpleFuncInterface sfi) {
-        sfi.doWork();
+    public void callDoWork(SimpleFuncInterface sfi, String work) {
+        sfi.doWork(work);
     }
 }

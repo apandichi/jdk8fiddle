@@ -13,16 +13,20 @@ public class SimpleFuncInterfaceTest {
         caller.callDoWork(
                 new SimpleFuncInterface() {
                     @Override
-                    public void doWork() {
-                        System.out.println("Doing work from an anonymous inner class");
+                    public void doWork(String work) {
+                        System.out.println("Doing work from an anonymous inner class: " + work);
                     }
-                });
+                },
+                "anonymous work"
+        );
     }
 
     @Test
     public void lambdaTest() {
         DoWorkCaller caller = new DoWorkCaller();
         caller.callDoWork(
-                () -> System.out.println("Doing work from a lambda implementation"));
+                (work) -> System.out.println("Doing work from a lambda implementation: " + work),
+                "lambda work"
+                );
     }
 }

@@ -24,7 +24,6 @@ public class SimpleFuncInterfaceTest {
     @Test
     public void lambdaTest() {
         DoWorkCaller caller = new DoWorkCaller("lambda work");
-        caller.callDoWork(
-                work -> System.out.println("Doing work from a lambda implementation: " + work));
+        caller.callDoWork(System.out::println);
     }
 }
